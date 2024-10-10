@@ -20,7 +20,7 @@ ymaps.ready(function () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: '../icons/map/bullit.png',
+            iconImageHref: './icons/map/bullit.png',
             // Размеры метки.
             iconImageSize: [31, 31],
             // Смещение левого верхнего угла иконки относительно
