@@ -7,9 +7,16 @@ hamburger.addEventListener('click', () => {
    menu.classList.add('active');
 });
 
-close.addEventListener('click', () => {
+function closeMenu() {
    menu.classList.remove('active');
+}
+
+close.addEventListener('click', () => {
+  closeMenu();
 });
+// close.addEventListener('click', () => {
+//    menu.classList.remove('active');
+// });
 
 
 
@@ -19,7 +26,6 @@ const prevBtn = document.querySelector('.arrow-prev');
 const nextBtn = document.querySelector('.arrow-next');
 const slideCount = slides.length;
 let slideIndex = 1;
-console.log('хуй');
 nextBtn.addEventListener('click', function() { //Слушатель нажатия на кнопку "вперёд"
   slideIndex = (slideIndex + 1) % slideCount; //Высчитывание индекса следующего слайда
   updateSlider();
